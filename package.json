@@ -1,0 +1,22 @@
+{
+  "name": "create-cloudflare-dns-record",
+  "version": "4.0.0",
+  "description": "GuildDevOps action to create or update a Cloudflare DNS record",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuildDevOps/create-cloudflare-dns-record.git"
+  },
+  "keywords": [
+    "cloudflare"
+  ],
+  "author": "devops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuildDevOps/create-cloudflare-dns-record/issues"
+  },
+  "homepage": "https://github.com/GuildDevOps/create-cloudflare-dns-record#readme"
+}

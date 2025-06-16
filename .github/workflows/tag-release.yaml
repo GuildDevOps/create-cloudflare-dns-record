@@ -1,0 +1,20 @@
+name: Tag Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  create-release-tag:
+    name: Create Tag for Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+      - name: Tag Version
+        uses: Klemensas/action-autotag@stable
+        id: tag-release
+        with:
+          tag_prefix: "v"
+          GITHUB_TOKEN: "${{ secrets.DEVOPS_ALL_GITHUB_DEVOPS_BOT_PAT }}"
